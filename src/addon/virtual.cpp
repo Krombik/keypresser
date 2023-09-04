@@ -39,7 +39,7 @@ void Virtual::mover(POINT coords, bool isAbsolute) {
 }
 
 void Virtual::wheelScroller(int x) {
-  SendMessageA(hWnd, WM_MOUSEWHEEL, MAKEWPARAM(x, MK_MBUTTON), MAKELPARAM(lastCoords.x, lastCoords.y));
+  SendMessageA(hWnd, WM_MOUSEWHEEL, MAKEWPARAM(0, x * WHEEL_DELTA), MAKELPARAM(lastCoords.x, lastCoords.y));
 }
 
 void Virtual::keyToggler(UINT key, bool isKeyDown) {

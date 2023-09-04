@@ -125,7 +125,7 @@ void Hardware::wheelScroller(int x) {
 
   ip.mi.dx = 0;
   ip.mi.dy = 0;
-  ip.mi.mouseData = x;
+  ip.mi.mouseData = x * WHEEL_DELTA;
   ip.mi.dwExtraInfo = 0;
   ip.mi.time = 0;
   ip.mi.dwFlags = MOUSEEVENTF_WHEEL;
