@@ -1231,7 +1231,7 @@ import { LowLevelHook } from "keysender";
 
 new LowLevelHook({
   device: "keyboard",
-  key: "a",
+  button: "a",
   mode: "hold",
   action() {
     console.log("'a' pressed");
@@ -1242,7 +1242,7 @@ new LowLevelHook({
 
 new LowLevelHook({
   device: "mouse",
-  key: "left",
+  button: "left",
   mode: "once",
   action() {
     console.log("left mouse button was pressed");
